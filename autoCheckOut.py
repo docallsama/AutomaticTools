@@ -30,7 +30,7 @@ def findAllWorkFolder(workType,tag_num,need_pull):
         if localFile.startswith(".")!=1:
             print('woring on %s/%s' %(project_path,localFile))
             if workType == 1:
-                print('hahahah')
+                addTagToRemote(localFile,tag_num)
             else:
                 jumpToTag(localFile,tag_num,need_pull)
 
